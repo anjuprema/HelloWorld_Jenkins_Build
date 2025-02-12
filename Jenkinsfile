@@ -28,7 +28,7 @@ pipeline {
 
         stage('Archive JAR') {
             steps {
-                archiveArtifacts artifacts: 'D:/STS_workspace/HelloWorld/target/*.jar', fingerprint: true
+                archiveArtifacts artifacts: 'D:/STS_workspace/HelloWorld/target/*.jar', fingerprint: true //couldn't fix pipeline error
             }
         }
     }
